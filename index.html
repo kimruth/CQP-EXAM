@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CQP EXAM | ToDoList</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestion de Tâches</h1>
+
+  <form class="task-form" id="taskForm">
+    <input type="text" id="taskTitle" placeholder="Titre de la tâche" required>
+    <input type="date" id="taskDate" required>
+    <select id="taskPriority">
+      <option value="high">Haute</option>
+      <option value="medium">Moyenne</option>
+      <option value="low">Basse</option>
+    </select>
+    <button type="submit">Ajouter</button>
+  </form>
+
+  <div class="message" id="messageBox"></div>
+
+  <div class="controls">
+    <input type="text" id="searchBox" placeholder="Rechercher une tâche...">
+    <select id="filterPriority">
+      <option value="all">Toutes Priorités</option>
+      <option value="high">Haute</option>
+      <option value="medium">Moyenne</option>
+      <option value="low">Basse</option>
+    </select>
+
+    <select id="filterStatus">
+      <option value="all">Tous Statuts</option>
+      <option value="complete">Complètes</option>
+      <option value="incomplete">Non complètes</option>
+    </select>
+
+    <input type="date" id="filterDate">
+  </div>
+
+  <div class="task-list" id="taskList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
